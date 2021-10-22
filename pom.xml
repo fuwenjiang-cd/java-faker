@@ -4,7 +4,7 @@
     <groupId>com.github.javafaker</groupId>
     <artifactId>javafaker</artifactId>
     <packaging>jar</packaging>
-    <version>1.0.3.1-SNAPSHOT</version>
+    <version>1.0.4</version>
     <name>Java Faker</name>
     <description>
         This library is a port of Ruby's stympy/faker gem (as well as Perl's Data::Faker library) that generates fake
@@ -151,4 +151,18 @@
             </plugins>
         </pluginManagement>
     </build>
+    <distributionManagement>
+        <!--私服部署地址-->
+        <repository>
+            <id>maven-personal</id>
+            <name>releases</name>
+            <url>http://192.168.0.120:11009/repository/maven-releases</url>
+            <uniqueVersion>true</uniqueVersion>
+        </repository>
+        <snapshotRepository>
+            <id>maven-personal</id>
+            <name>snapshots</name>
+            <url>http://192.168.0.120:11009/repository/maven-snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
 </project>
