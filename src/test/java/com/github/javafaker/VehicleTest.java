@@ -7,8 +7,6 @@ import java.text.DecimalFormatSymbols;
 
 public class VehicleTest extends AbstractFakerTest {
 
-    private static final char decimalSeparator = new DecimalFormatSymbols().getDecimalSeparator();
-
     @Test
     public void testVINs() {
         final String vin = faker.vehicle().vin();
