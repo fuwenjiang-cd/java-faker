@@ -1,5 +1,6 @@
 package com.github.javafaker.service;
 
+import java.util.List;
 import java.util.Random;
 
 public class RandomService {
@@ -41,6 +42,10 @@ public class RandomService {
             val = bits % n;
         } while (bits - val + (n - 1) < 0L);
         return val;
+    }
+
+    public <T> T choice(List<T> data, Class<T> t) {
+        return (T) data.get(random.nextInt(data.size()));
     }
 
     public double nextDouble() {

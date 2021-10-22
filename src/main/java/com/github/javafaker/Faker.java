@@ -29,6 +29,7 @@ public class Faker {
     private final PhoneNumber phoneNumber;
     private final Pokemon pokemon;
     private final Address address;
+    private final Vehicle vehicle;
     private final Business business;
     private final Book book;
     private final ChuckNorris chuckNorris;
@@ -221,6 +222,7 @@ public class Faker {
         this.barcode = new Barcode(this);
         this.sip = new Sip(this);
         this.englandfootball = new EnglandFootBall(this);
+        this.vehicle =new Vehicle(this);
     }
 
     /**
@@ -395,6 +397,9 @@ public class Faker {
 
     public Address address() {
         return address;
+    }
+    public Vehicle vehicle(){
+        return vehicle;
     }
 
     public Book book() {
